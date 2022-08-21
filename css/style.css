@@ -1,0 +1,613 @@
+/* Generales */
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+body{
+    font-family: 'Lato', sans-serif; /* fuente */
+    font-size: 1em;
+    box-sizing: border-box;
+    color: #0d0d0d;
+}
+
+a{  /* color de los hipervínculos */
+    color: #D98A29;
+}
+
+#principal{ /* color de fondo del Main */
+    background-color: #c4f2ae;
+}
+
+.fontBackground{ /* color de fondo de los textos */
+    background-color: #f2f2f2;
+}
+
+ul{
+    list-style: none;
+}
+
+
+/* Grid */
+
+#mainGrid{
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: 1fr auto 1.4fr;    
+}
+
+/* Vista Mobile 320px - 480px */
+
+/* Header, Nav */
+.navHeader{
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;   
+    position: sticky;
+    top: 0px;
+    background-color: #f2f2f2;
+    z-index: 2;
+}
+
+.logo{
+    display: flex;
+    align-items:center;
+}
+
+.imagenLogo img{
+    width: 4em;
+    height: 4em;
+}
+
+.textoLogo{
+    font-size: 0.65em; 
+}
+
+.listaMenu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 0.3em;
+
+}
+
+.listaMenu li{
+    padding: 0.5em; 
+    border-right: solid;
+    border-width: 1px;
+    border-color: #0d0d0d;
+    font-size: 0.5em;
+}
+
+.listaMenu li:last-child{ /* borra el último borde del nav */
+    border-right: 0em;
+}
+
+/* footer */
+
+.navFooter{
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+
+.textoFooter{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    font-size: 0.65em;
+}
+
+.linkRedes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.linkRedes img{
+    width: 2em;
+    margin: 1em;
+}
+
+/* Index */
+
+.mainFlex{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.indexSection p{
+    margin-bottom: 1em;
+    text-align: center; 
+    font-size: 0.8em;
+}
+
+.titulo{
+    margin-top: 1em;
+    margin-bottom: 1em; 
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bolder; 
+}
+
+.contacto{
+    margin-bottom: 2em;
+    font-size: 0.8em;
+}
+
+/* Quienes Somos */
+
+.integrantesFlex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.integrantesFoto{
+    margin-top: 1em;
+    margin-right: 3em;
+    margin-bottom: 1em;
+    margin-left: 3em;
+    text-align: center;
+}
+
+.integrantesFoto img{
+    width: 12em;
+    height: 12em;
+}
+
+/* Talleres y grupos terapéuticos */
+
+.talleresLista{
+    position: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: fit-content;
+    font-size: 0.8em;
+}
+
+.talleresLista div{
+     margin-bottom: 1em; 
+}
+
+.talleresLista img{
+    width: 18em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/* Servicios */
+
+.serviciosSection{
+    background-color: #f2f2f2;
+    margin-bottom: 1em;
+}
+
+.serviciosSection ul{
+    margin: 0.5em;
+    margin-left: 1.3em;
+    list-style: disc;
+}
+
+.subtitulo{
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em; 
+}
+
+/* Contactanos */
+
+.contactoFlex{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+}
+
+.contactoSection p{
+    font-size: 0.8em;
+}
+
+.contactoForm fieldset{
+    max-width: 263px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.contactoInputNombre{
+    margin: 0.5em;
+}
+
+.contactoInputNombre input{
+    width: 13em;
+}
+
+.contactoInputEmail{
+    margin: 0.5em;
+}
+
+.contactoInputEmail input{
+    width: 14.5em;
+}
+
+.contactoButtons input{
+    width: 5em;
+    margin: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/* Media Querie 480px - 600px */
+@media screen and (min-width:480px) {
+
+    /* Header y Nav */
+
+    .imagenLogo img{
+        width: 5em;
+        height: 5em;
+    }
+     
+    .textoLogo{
+        font-size: 0.75em;   
+    }
+     
+    .listaMenu li{
+        padding: 0.7em; 
+        font-size: 0.73em; 
+    }
+
+    /* Footer */
+
+    .textoFooter{ 
+        font-size: 0.75em;
+    }
+      
+    .linkRedes img{
+        width: 2.5em;
+    }
+
+    /* Index */
+
+    .indexSection p{
+        font-size: 1em;
+    }
+     
+    .titulo{
+        font-size: 1.4em;
+    }
+     
+    .contacto{
+        font-size: 1em;
+    }
+
+    /* Quienes Somos */
+
+    /* Talleres y Grupos Terapéuticos */
+
+    .talleresLista{
+        font-size: 1em;
+    }
+
+    /* Servicios */
+
+    .subtitulo{
+        font-size: 1.1em;
+    }
+
+    /* Contactanos */
+
+    .contactoSection p{
+        font-size: 0.9em;
+    }
+    
+}
+
+/* Media Querie 600px - 768px */
+@media screen and (min-width:600px) {
+
+    /* Header y Nav */
+     
+    .textoLogo{
+        font-size: 0.8em;   
+    }
+     
+    .listaMenu li{
+        padding: 1em; 
+        font-size: 0.83em; 
+    }
+
+    /* Footer */
+
+    .textoFooter{ 
+        font-size: 0.8em;
+    }
+      
+    .linkRedes img{
+        width: 3em;
+    }
+
+    /* Index */
+
+    .indexSection p{
+        font-size: 1.2em;
+    }
+     
+    .titulo{
+        font-size: 2em;
+    }
+     
+    .contacto{
+        font-size: 1.2em;
+    }
+
+    /* Quienes Somos */
+
+    /* Talleres y Grupos Terapéuticos */
+
+    /* Servicios */
+
+    .serviciosSection ul{
+        font-size: 1.1em;
+    }
+
+    .subtitulo{
+        font-size: 1.4em;
+    }
+
+    /* Contactanos */
+
+    .contactoSection p{
+        font-size: 1em;
+    }
+}
+
+/* Media Querie 768px-1024px */
+@media screen and (min-width:768px) {
+
+    /* Header y Nav */
+
+    .navHeader{
+        justify-content: space-between;
+        flex-flow: nowrap;
+    } 
+
+    .textoLogo{
+        font-size: 0.7em;   
+    }
+
+    .listaMenu{
+        flex-flow: nowrap;
+        margin-bottom: 0em;
+    } 
+     
+    .listaMenu li{
+        text-align: center;
+        padding: 0.6em; 
+        font-size: 0.7em; 
+    }
+
+    /* Footer */
+
+    .navFooter{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .textoFooter{
+        flex-direction: row;
+        font-size: 0.8em;
+        margin-top: 0em;
+    }
+
+    .textoFooter p{
+        margin-right: 1em;
+        margin-left: 1em;
+
+    }
+
+    .linkRedes img{
+        width: 3em;
+    }
+
+    /* Index */
+
+    .indexSection p{
+        font-size: 1.5em;
+    }
+     
+    .titulo{
+        font-size: 2.3em;
+    }
+     
+    .contacto{
+        font-size: 1.3em;
+    }
+
+    /* Quienes Somos */
+
+    .integrantesFoto img{
+        width: 14em;
+        height: 14em;
+    }
+
+    .integrantesFoto p{
+        font-size: 1.2em;
+    }
+
+    /* Talleres y Grupos Terapéuticos */
+
+    .talleresLista img{
+        width: 20em;
+    }
+
+    /* Servicios */
+
+    .serviciosSection ul{
+        font-size: 1.3em;
+    }
+
+    .subtitulo{
+        font-size: 1.6em;
+    }
+    
+    /* Contactanos */
+
+}
+
+/* Media Querie 1024px - 1200 px */
+@media screen and (min-width:1024px) {
+
+    /* Header y Nav */
+
+    .textoLogo{
+        font-size: 0.8em;   
+    }
+     
+    .listaMenu li{
+        padding: 0.7em; 
+        font-size: 0.9em; 
+    }
+
+    /* Footer */
+
+    .textoFooter{
+        font-size: 0.9em;
+    }   
+
+    /* Index */
+
+    .indexSection p{
+        font-size: 1.6em;
+    }
+     
+    .titulo{
+        font-size: 2.8em;
+    }
+     
+    .contacto{
+        font-size: 1.4em;
+    }
+
+    /* Quienes Somos */
+
+    /* Talleres y Grupos Terapéuticos */
+
+    .talleresLista{
+        font-size: 1.1em;
+    }
+
+    /* Servicios */
+
+    .serviciosSection ul{
+        font-size: 1.4em;
+    }
+
+    .subtitulo{
+        font-size: 1.7em;
+    }
+
+    /* Contactanos */
+
+    .contactoSection p{
+        font-size: 1.2em;
+    }
+
+    .contactoFlex{
+        flex-direction: row;
+        justify-content:space-evenly;
+    }
+
+}
+
+/* Media Querie 1200 px - */
+@media screen and (min-width:1200px) {
+
+    /* Header y Nav */
+
+    .textoLogo{
+        font-size: 0.9em;   
+    }
+     
+    .listaMenu li{
+        padding: 0.8em; 
+        font-size: 1em; 
+    }
+
+    /* Footer */
+
+    .textoFooter{
+        font-size: 1em;
+    }   
+
+    /* Index */
+
+    .indexSection p{
+        font-size: 2em;
+    }
+     
+    .titulo{
+        font-size: 3em;
+    }
+     
+    .contacto{
+        font-size: 1.6em;
+    }
+
+    /* Quienes Somos */
+
+    .integrantesFoto{
+        margin-bottom: 2em;
+    }
+
+    .integrantesFoto img{
+        width: 18em;
+        height: 18em;
+    }
+
+    /* Talleres y Grupos Terapéuticos */
+
+    .talleresLista{
+        font-size: 1.2em;
+    }
+
+    /* Servicios */
+
+    .serviciosSection ul{
+        font-size: 1.5em;
+    }
+
+    .subtitulo{
+        font-size: 1.8em;
+    }
+
+    /* Contactanos */
+
+    .contactoSection p{
+        font-size: 1.3em;
+    }
+}
