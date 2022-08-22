@@ -15,14 +15,6 @@ a{  /* color de los hipervínculos */
     color: #D98A29;
 }
 
-#principal{ /* color de fondo del Main */
-    background-color: #c4f2ae;
-}
-
-.fontBackground{ /* color de fondo de los textos */
-    background-color: #f2f2f2;
-}
-
 ul{
     list-style: none;
 }
@@ -124,6 +116,11 @@ ul{
 
 /* Index */
 
+#indexBackground{ /* Gradiente del background */
+    background: rgb(242,242,242);
+    background-image: radial-gradient(circle, #f2f2f2 60%, #c4f2ae 100%);
+}
+
 .mainFlex{
     grid-area: main;
     display: flex;
@@ -153,6 +150,11 @@ ul{
 
 /* Quienes Somos */
 
+#integrantesBackground{
+    background: rgb(242,242,242);
+    background-image: radial-gradient(circle, #f2f2f2 80%, #c4f2ae 100%); 
+}
+
 .integrantesFlex{
     display: flex;
     flex-direction: row;
@@ -176,6 +178,11 @@ ul{
 
 /* Talleres y grupos terapéuticos */
 
+#talleresBackground{
+    background: rgb(242,242,242);
+    background-image: radial-gradient(circle, #f2f2f2 70%, #c4f2ae 100%);
+}
+
 .talleresLista{
     position: flex;
     flex-direction: column;
@@ -198,8 +205,12 @@ ul{
 
 /* Servicios */
 
+#serviciosBackground{
+    background: rgb(242,242,242);
+    background-image: radial-gradient(circle, #f2f2f2 60%, #c4f2ae 100%);
+}
+
 .serviciosSection{
-    background-color: #f2f2f2;
     margin-bottom: 1em;
 }
 
@@ -219,6 +230,11 @@ ul{
 
 /* Contactanos */
 
+#contactoBackground{
+    background: rgb(242,242,242);
+    background-image: radial-gradient(circle, #f2f2f2 65%, #c4f2ae 100%);
+}
+
 .contactoFlex{
     grid-area: main;
     display: flex;
@@ -229,10 +245,12 @@ ul{
 }
 
 .contactoSection p{
+    text-align: center;
     font-size: 0.8em;
 }
 
 .contactoForm fieldset{
+    background-color: #f2f2f2;
     max-width: 263px;
     margin-top: 2em;
     margin-bottom: 2em;
@@ -307,6 +325,10 @@ ul{
 
     /* Quienes Somos */
 
+    #integrantesBackground{
+        background-image: radial-gradient(circle, #f2f2f2 65%, #c4f2ae 100%); 
+    }
+
     /* Talleres y Grupos Terapéuticos */
 
     .talleresLista{
@@ -320,6 +342,10 @@ ul{
     }
 
     /* Contactanos */
+
+    #contactoBackground{
+        background-image: radial-gradient(circle, #f2f2f2 50%, #c4f2ae 100%);
+    }
 
     .contactoSection p{
         font-size: 0.9em;
@@ -367,8 +393,16 @@ ul{
 
     /* Quienes Somos */
 
+    #integrantesBackground{
+        background-image: radial-gradient(circle, #f2f2f2 55%, #c4f2ae 100%); 
+    }
+
     /* Talleres y Grupos Terapéuticos */
 
+    #talleresBackground{
+        background-image: radial-gradient(circle, #f2f2f2 50%, #c4f2ae 100%);
+    }
+    
     /* Servicios */
 
     .serviciosSection ul{
@@ -380,6 +414,10 @@ ul{
     }
 
     /* Contactanos */
+
+    #contactoBackground{
+        background-image: radial-gradient(circle, #f2f2f2 35%, #c4f2ae 100%);
+    }
 
     .contactoSection p{
         font-size: 1em;
@@ -436,6 +474,10 @@ ul{
 
     /* Index */
 
+    #indexBackground{
+        background-image: radial-gradient(circle, #f2f2f2 40%, #c4f2ae 100%);
+    }
+
     .indexSection p{
         font-size: 1.5em;
     }
@@ -450,6 +492,10 @@ ul{
 
     /* Quienes Somos */
 
+    #integrantesBackground{
+        background-image: radial-gradient(circle, #f2f2f2 20%, #c4f2ae 100%); 
+    }
+
     .integrantesFoto img{
         width: 14em;
         height: 14em;
@@ -461,11 +507,19 @@ ul{
 
     /* Talleres y Grupos Terapéuticos */
 
+    #talleresBackground{
+        background-image: radial-gradient(circle, #f2f2f2 45%, #c4f2ae 100%);
+    }
+
     .talleresLista img{
         width: 20em;
     }
 
     /* Servicios */
+
+    #serviciosBackground{
+        background-image: radial-gradient(circle, #f2f2f2 40%, #c4f2ae 100%);
+    }
 
     .serviciosSection ul{
         font-size: 1.3em;
@@ -476,6 +530,10 @@ ul{
     }
     
     /* Contactanos */
+
+    #contactoBackground{
+        background-image: radial-gradient(circle, #f2f2f2 25%, #c4f2ae 100%);
+    }
 
 }
 
@@ -523,6 +581,10 @@ ul{
 
     /* Servicios */
 
+    #serviciosBackground{
+        background-image: radial-gradient(circle, #f2f2f2 30%, #c4f2ae 100%);
+    }
+
     .serviciosSection ul{
         font-size: 1.4em;
     }
@@ -532,6 +594,10 @@ ul{
     }
 
     /* Contactanos */
+
+    #contactoBackground{
+        background-image: radial-gradient(circle, #f2f2f2 0%, #c4f2ae 100%);
+    }
 
     .contactoSection p{
         font-size: 1.2em;
@@ -596,6 +662,10 @@ ul{
     }
 
     /* Servicios */
+
+    #serviciosBackground{
+        background-image: radial-gradient(circle, #f2f2f2 20%, #c4f2ae 100%);
+    }
 
     .serviciosSection ul{
         font-size: 1.5em;
