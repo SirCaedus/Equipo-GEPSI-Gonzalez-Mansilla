@@ -88,14 +88,14 @@ ul{
     transition: background-color .4s ease-in-out;
 } 
 
-.listaItems:hover{    /*cambia color del menú cuando se selecciona */
-    transition: scale .4s ease-in-out;
+.listaItems:hover{    /* cambia color del menú cuando se selecciona */
     background-color: #D98A29;
+    transition: scale .4s ease-in-out;
     scale: 1.1;
 }
 
 
-.listaItems:active{
+.listaItems:active{ /* cambia el tamaño del menú cuando se clickea */
    transition: .2s ease-in-out;
    scale: 0.9;
 }
@@ -137,7 +137,7 @@ ul{
     transition: all .4s ease-in-out;
 }
 
-.linkRedes img:hover{
+.linkRedes img:hover{ /* transformación del tamaño de las imagenes del footer */
     transform: scale(1.3);
 }
 
@@ -287,6 +287,7 @@ ul{
     margin-top: 2em;
     margin-bottom: 2em;
     text-align: center;
+    font-size: 0.9em;
 }
 
 .contactoInputNombre{
@@ -294,7 +295,7 @@ ul{
 }
 
 .contactoInputNombre input{
-    width: 13em;
+    width: 15.3em;
 }
 
 .contactoInputEmail{
@@ -302,7 +303,7 @@ ul{
 }
 
 .contactoInputEmail input{
-    width: 14.5em;
+    width: 15.3em;
 }
 
 .contactoButtons input{
@@ -323,7 +324,7 @@ ul{
     }
      
     .textoLogo{
-        font-size: 0.75em;
+        font-size: 0.7em;
         margin-top: 0.9em;
         width: auto;   
     }
@@ -556,29 +557,17 @@ ul{
 
     /* Header y Nav */
 
-    .navHeader{
-        justify-content: flex-end;
-    }
-
     .textoLogo{
         font-size: 0.8em;
         width: 12em;   
     }
 
-    .listaNav{     
-        justify-content: flex-end;
+    .listaNav{    /* para que el menú quede en la derecha */  
+        justify-content: flex-end; 
     }
 
     .listaItems{
         padding: 1em;
-    }
-
-    .listaItems a{
-        color: #D98A29;
-    }
-
-    .listaItems a:hover{
-        color:#0d0d0d;
     }
 
     /* Footer */
