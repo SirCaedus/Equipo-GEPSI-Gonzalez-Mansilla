@@ -1,0 +1,67 @@
+/* Imports */
+
+@import "header";
+@import "footer";
+@import "index";
+@import "integrantes";
+@import "talleres";
+@import "servicios";
+@import "contactanos";
+
+/* Variables */
+
+$black: #0d0d0d; /* Colores */
+$white: #f2f2f2;
+$orange: #D98A29;
+$green: #c4f2ae;
+
+/* Generales */
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+body{
+    font-family: 'Lato', sans-serif; /* fuente */
+    font-size: 1em;
+    box-sizing: border-box;
+    color: $black;
+}
+
+a{  /* color de los hipervínculos */
+    color: $orange;
+    transition: color .5s ease-in-out;
+}
+
+ul{
+    list-style: none;
+}
+
+.opacidad{ /* opacidad de los elementos */
+    animation-name: opacidad;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+@keyframes opacidad{
+    0%{opacity: 0;}
+    25%{opacity:0,25;}
+    50%{opacity: 0,5;}
+    75%{opacity: 0,75;}
+    100%{opacity: 1;}
+}
+
+.delay{ 
+    animation-delay: 1s;
+}
+
+/* Grid */
+
+#mainGrid{
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: 1fr auto 1.4fr;    
+}

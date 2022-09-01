@@ -1,0 +1,122 @@
+/* Vista Mobile 320px - 480px */
+
+#indexBackground{ /* Gradiente del background */
+    background: rgb(242,242,242);
+    background-image: radial-gradient(circle, $white 60%, $green 100%);
+}
+
+.mainFlex{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.indexSection p{
+    margin-bottom: 1em;
+    text-align: center; 
+    font-size: 0.8em;
+}
+
+.titulo{
+    margin-top: 1em;
+    margin-bottom: 1em; 
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bolder; 
+}
+
+.contacto{
+    margin-bottom: 2em;
+    font-size: 0.8em;
+}
+
+/* Media Querie 480px - 600px */
+@media screen and (min-width:480px){
+
+    .indexSection p{
+        font-size: 1em;
+    }
+     
+    .titulo{
+        font-size: 1.4em;
+    }
+     
+    .contacto{
+        font-size: 1em;
+    }
+    
+}
+
+/* Media Querie 600px - 768px */
+@media screen and (min-width:600px){
+
+    .indexSection p{
+        font-size: 1.2em;
+    }
+     
+    .titulo{
+        font-size: 2em;
+    }
+     
+    .contacto{
+        font-size: 1.2em;
+    }
+    
+}
+
+/* Media Querie 768px-992px */
+@media screen and (min-width:768px){
+
+    #indexBackground{
+        background-image: radial-gradient(circle, $white 40%, $green 100%);
+    }
+
+    .indexSection p{
+        font-size: 1.5em;
+    }
+     
+    .titulo{
+        font-size: 2.3em;
+    }
+     
+    .contacto{
+        font-size: 1.3em;
+    }
+    
+}
+
+/* Media Querie 992px - 1200 px */
+@media screen and (min-width:992px){
+
+    .indexSection p{
+        font-size: 1.6em;
+    }
+     
+    .titulo{
+        font-size: 2.8em;
+    }
+     
+    .contacto{
+        font-size: 1.4em;
+    }
+
+}
+
+/* Media Querie 1200 px - */
+@media screen and (min-width:1200px){
+
+    .indexSection p{
+        font-size: 2em;
+    }
+     
+    .titulo{
+        font-size: 3em;
+    }
+     
+    .contacto{
+        font-size: 1.6em;
+    }
+    
+}

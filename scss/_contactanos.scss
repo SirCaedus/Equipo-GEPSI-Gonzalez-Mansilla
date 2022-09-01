@@ -1,0 +1,114 @@
+/* Vista Mobile 320px - 480px */
+
+#contactoBackground{
+    background: rgb(242,242,242);
+    background-image: radial-gradient(circle, $white 65%, $green 100%);
+}
+
+.contactoFlex{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+}
+
+.contactoSection p{
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.contactoForm fieldset{
+    background-color: $white;
+    max-width: 263px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.contactoInputNombre{
+    margin: 0.5em;
+
+        input{
+            width: 15.3em; 
+        }
+}
+
+.contactoInputEmail{
+    margin: 0.5em;
+
+        input{
+            width: 15.3em; 
+        }
+}
+
+.contactoButtons input{
+    width: 5em;
+    margin: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/* Media Querie 480px - 600px */
+@media screen and (min-width:480px){
+
+    #contactoBackground{
+        background-image: radial-gradient(circle, $white 50%, $green 100%);
+    }
+
+    .contactoSection p{
+        font-size: 0.9em;
+    }
+    
+}
+
+/* Media Querie 600px - 768px */
+@media screen and (min-width:600px){
+
+    #contactoBackground{
+        background-image: radial-gradient(circle, $white 35%, $green 100%);
+    }
+
+    .contactoSection p{
+        font-size: 1em;
+    }
+    
+}
+
+/* Media Querie 768px-992px */
+@media screen and (min-width:768px){
+
+    #contactoBackground{
+        background-image: radial-gradient(circle, $white 25%, $green 100%);
+    }
+    
+}
+
+/* Media Querie 992px - 1200 px */
+@media screen and (min-width:992px){
+
+    #contactoBackground{
+        background-image: radial-gradient(circle, $white 0%, $green 100%);
+    }
+
+    .contactoSection p{
+        font-size: 1.2em;
+    }
+
+    .contactoFlex{
+        flex-direction: row;
+        justify-content:space-evenly;
+    }
+    
+}
+
+/* Media Querie 1200 px - */
+@media screen and (min-width:1200px){
+
+    .contactoSection p{
+        font-size: 1.3em;
+    }
+    
+}

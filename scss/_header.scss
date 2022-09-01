@@ -1,0 +1,123 @@
+/* Vista Mobile 320px - 480px */
+
+.navHeader{
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;   
+    position: sticky;
+    top: 0px;
+    background-color: $white;
+    z-index: 2;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.imagenLogo img{
+    width: 4em;
+    height: 4em;
+}
+
+
+.textoLogo{
+    margin-top: 1.2em;
+    font-size: 0.65em;
+    width: 15em;
+}
+
+.listaItems{ 
+    font-size: 0.7em;
+    text-align: center;
+    transition: background-color .4s ease-in-out;
+
+        &:hover{ /* color y tamaño al seleccionar */
+            background-color: $orange;
+            transition: scale .4s ease-in-out;
+            scale: 1.1;
+        }
+ 
+        &:active{ /* cambia el tamaño del menú cuando se clickea */
+            transition: .2s ease-in-out;
+            scale: 0.9;  
+        }
+}
+
+.listaButton{
+    margin-right: 1em;
+}
+
+/* Media Querie 480px - 600px */
+@media screen and (min-width:480px){
+
+    .imagenLogo img{
+        width: 5em;
+        height: 5em;
+    }
+     
+    .textoLogo{
+        font-size: 0.7em;
+        margin-top: 0.9em;
+        width: auto;   
+    }
+     
+    .listaItems{
+        font-size: 0.8em;
+    }
+
+}
+
+/* Media Querie 600px - 768px */
+@media screen and (min-width:600px){
+
+    .textoLogo{
+        font-size: 0.8em;
+        margin-top: 1.2em;  
+    }
+
+    .listaItems{
+        font-size: 0.9em;
+    }
+
+    /* Footer */
+
+    .textoFooter{ 
+        font-size: 0.8em;
+    }
+      
+    .linkRedes img{
+        width: 3em;
+    }
+
+}
+
+/* Media Querie 992px - 1200 px */
+@media screen and (min-width:992px){
+
+    .textoLogo{
+        font-size: 0.8em;
+        width: 12em;   
+    }
+
+    .listaNav{    /* para que el menú quede en la derecha */  
+        justify-content: flex-end; 
+    }
+
+    .listaItems{
+        padding: 1em;
+    }
+    
+}
+
+/* Media Querie 1200 px - */
+@media screen and (min-width:1200px){
+
+    .textoLogo{
+        font-size: 0.9em;   
+    }
+
+}

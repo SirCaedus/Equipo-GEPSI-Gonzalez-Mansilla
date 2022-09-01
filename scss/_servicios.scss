@@ -1,0 +1,97 @@
+/* Vista Mobile 320px - 480px */
+
+#serviciosBackground{ /* Gradiente del Background */
+    background: rgb(242,242,242);
+    background-image: radial-gradient(circle, $white 60%, $green 100%);
+}
+
+.serviciosSection{
+    margin-bottom: 1em;
+
+        ul{
+            margin: 0.5em;
+            margin-left: 1.3em;
+            list-style: disc; 
+        }
+}
+
+.subtitulo{
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em; 
+}
+
+/* Media Querie 480px - 600px */
+@media screen and (min-width:480px){
+
+    .subtitulo{
+        font-size: 1.1em;
+    }
+    
+}
+
+/* Media Querie 600px - 768px */
+@media screen and (min-width:600px){
+
+    .serviciosSection ul{
+        font-size: 1.1em;
+    }
+
+    .subtitulo{
+        font-size: 1.4em;
+    }
+    
+}
+
+/* Media Querie 768px-992px */
+@media screen and (min-width:768px){
+
+    #serviciosBackground{
+        background-image: radial-gradient(circle, $white 40%, $green 100%);
+    }
+
+    .serviciosSection ul{
+        font-size: 1.3em;
+    }
+
+    .subtitulo{
+        font-size: 1.6em;
+    }
+    
+}
+
+/* Media Querie 992px - 1200 px */
+@media screen and (min-width:992px){
+
+    #serviciosBackground{
+        background-image: radial-gradient(circle, $white 30%, $green 100%);
+    }
+
+    .serviciosSection ul{
+        font-size: 1.4em;
+    }
+
+    .subtitulo{
+        font-size: 1.7em;
+    }
+    
+}
+
+/* Media Querie 1200 px - */
+@media screen and (min-width:1200px){
+
+    #serviciosBackground{
+        background-image: radial-gradient(circle, $white 20%, $green 100%);
+    }
+
+    .serviciosSection ul{
+        font-size: 1.5em;
+    }
+
+    .subtitulo{
+        font-size: 1.8em;
+    }
+    
+}
