@@ -2,15 +2,14 @@
 
 #integrantesBackground{ /* Gradiente del background */
     background: rgb(242,242,242);
-    background-image: radial-gradient(circle, $white 80%, $green 100%); 
+    background-image: radial-gradient(circle, map-get($colores,blanco) 80%, map-get($colores,verde) 100%); 
 }
 
 .integrantesFlex{
-    display: flex;
+    @include flex-alignItems-center;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:space-evenly;
-    align-items: center;
 }
 
 .integrantesFoto{
@@ -21,8 +20,7 @@
     text-align: center;
 
         img{
-            width: 12em;
-            height: 12em;  
+            @include sizes(12em,12em);  
         }
 }
 
@@ -30,7 +28,7 @@
 @media screen and (min-width:480px){
 
     #integrantesBackground{
-        background-image: radial-gradient(circle, $white 65%, $green 100%); 
+        background-image: radial-gradient(circle, map-get($colores,blanco) 65%, map-get($colores,verde) 100%); 
     }
     
 }
@@ -39,7 +37,7 @@
 @media screen and (min-width:600px){
 
     #integrantesBackground{
-        background-image: radial-gradient(circle, $white 55%, $green 100%); 
+        background-image: radial-gradient(circle, map-get($colores,blanco) 55%, map-get($colores,verde) 100%); 
     }
     
 }
@@ -48,12 +46,11 @@
 @media screen and (min-width:768px){
 
     #integrantesBackground{
-        background-image: radial-gradient(circle, $white 20%, $green 100%); 
+        background-image: radial-gradient(circle, map-get($colores,blanco) 20%, map-get($colores,verde) 100%); 
     }
 
     .integrantesFoto img{
-        width: 14em;
-        height: 14em;
+        @include sizes(14em,14em);
 
             p{
                 font-size: 1.2em;   
@@ -69,8 +66,7 @@
         margin-bottom: 2em;
 
             img{
-                width: 18em;
-                height: 18em; 
+                @include sizes(18em,18em); 
             }
     }
     

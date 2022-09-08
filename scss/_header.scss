@@ -2,32 +2,29 @@
 
 .navHeader{
     grid-area: header;
-    display: flex;
+    @include flex-alignItems-center;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;   
+    justify-content: space-between;   
     position: sticky;
     top: 0px;
-    background-color: $white;
+    background-color: map-get($colores, blanco);
     z-index: 2;
 }
 
 .logo{
-    display: flex;
-    align-items: center;
+    @include flex-alignItems-center;
 }
 
 .imagenLogo img{
-    width: 4em;
-    height: 4em;
+    @include sizes(4em,4em);
 }
 
 
 .textoLogo{
     margin-top: 1.2em;
     font-size: 0.65em;
-    width: 15em;
+    @include sizes(15em);
 }
 
 .listaItems{ 
@@ -36,7 +33,7 @@
     transition: background-color .4s ease-in-out;
 
         &:hover{ /* color y tamaño al seleccionar */
-            background-color: $orange;
+            background-color: map-get($colores ,naranja);
             transition: scale .4s ease-in-out;
             scale: 1.1;
         }
@@ -55,8 +52,7 @@
 @media screen and (min-width:480px){
 
     .imagenLogo img{
-        width: 5em;
-        height: 5em;
+        @include sizes(5em,5em);
     }
      
     .textoLogo{
@@ -90,7 +86,7 @@
     }
       
     .linkRedes img{
-        width: 3em;
+        @include sizes(3em);
     }
 
 }
@@ -100,7 +96,8 @@
 
     .textoLogo{
         font-size: 0.8em;
-        width: 12em;   
+        width: 12em;
+        @include sizes(12em);   
     }
 
     .listaNav{    /* para que el menú quede en la derecha */  

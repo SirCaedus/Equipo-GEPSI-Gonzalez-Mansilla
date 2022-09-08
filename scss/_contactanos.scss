@@ -2,16 +2,12 @@
 
 #contactoBackground{
     background: rgb(242,242,242);
-    background-image: radial-gradient(circle, $white 65%, $green 100%);
+    background-image: radial-gradient(circle, map-get($colores,blanco) 65%, map-get($colores,verde) 100%);
 }
 
-.contactoFlex{
-    grid-area: main;
-    display: flex;
-    flex-direction: column;
+.contactoFlex{  
+    @extend .mainFlex;
     flex-wrap: wrap; 
-    justify-content: center;
-    align-items: center;
 }
 
 .contactoSection p{
@@ -20,7 +16,7 @@
 }
 
 .contactoForm fieldset{
-    background-color: $white;
+    background-color: map-get($colores,blanco);
     max-width: 263px;
     margin-top: 2em;
     margin-bottom: 2em;
@@ -28,15 +24,7 @@
     font-size: 0.9em;
 }
 
-.contactoInputNombre{
-    margin: 0.5em;
-
-        input{
-            width: 15.3em; 
-        }
-}
-
-.contactoInputEmail{
+.contactoInput{
     margin: 0.5em;
 
         input{
@@ -55,7 +43,7 @@
 @media screen and (min-width:480px){
 
     #contactoBackground{
-        background-image: radial-gradient(circle, $white 50%, $green 100%);
+        background-image: radial-gradient(circle, map-get($colores,blanco) 50%, map-get($colores,verde) 100%);
     }
 
     .contactoSection p{
@@ -68,7 +56,7 @@
 @media screen and (min-width:600px){
 
     #contactoBackground{
-        background-image: radial-gradient(circle, $white 35%, $green 100%);
+        background-image: radial-gradient(circle, map-get($colores,blanco) 35%, map-get($colores,verde) 100%);
     }
 
     .contactoSection p{
@@ -81,7 +69,7 @@
 @media screen and (min-width:768px){
 
     #contactoBackground{
-        background-image: radial-gradient(circle, $white 25%, $green 100%);
+        background-image: radial-gradient(circle, map-get($colores,blanco) 25%, map-get($colores,verde) 100%);
     }
     
 }
@@ -90,7 +78,7 @@
 @media screen and (min-width:992px){
 
     #contactoBackground{
-        background-image: radial-gradient(circle, $white 0%, $green 100%);
+        background-image: radial-gradient(circle, map-get($colores,blanco) 0%, map-get($colores,verde) 100%);
     }
 
     .contactoSection p{

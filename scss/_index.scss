@@ -2,15 +2,13 @@
 
 #indexBackground{ /* Gradiente del background */
     background: rgb(242,242,242);
-    background-image: radial-gradient(circle, $white 60%, $green 100%);
+    background-image: radial-gradient(circle, map-get($colores,blanco) 60%, map-get($colores, verde) 100%);
 }
 
 .mainFlex{
     grid-area: main;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex-alignItems-center;
+    @include flexColumn-justifyCenter;
 }
 
 .indexSection p{
@@ -70,7 +68,7 @@
 @media screen and (min-width:768px){
 
     #indexBackground{
-        background-image: radial-gradient(circle, $white 40%, $green 100%);
+        background-image: radial-gradient(circle, map-get($colores,blanco) 40%, map-get($colores, verde) 100%);
     }
 
     .indexSection p{
