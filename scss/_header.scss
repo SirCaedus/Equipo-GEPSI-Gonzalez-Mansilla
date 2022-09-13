@@ -8,7 +8,7 @@
     justify-content: space-between;   
     position: sticky;
     top: 0px;
-    background-color: map-get($colores, blanco);
+    background-color: $blanco;
     z-index: 2;
 }
 
@@ -33,7 +33,7 @@
     transition: background-color .4s ease-in-out;
 
         &:hover{ /* color y tamaño al seleccionar */
-            background-color: map-get($colores ,naranja);
+            background-color: $naranja;
             transition: scale .4s ease-in-out;
             scale: 1.1;
         }

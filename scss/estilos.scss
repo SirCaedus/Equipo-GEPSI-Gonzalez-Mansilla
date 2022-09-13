@@ -19,11 +19,11 @@ body{
     font-family: 'Lato', sans-serif; /* fuente */
     font-size: 1em;
     box-sizing: border-box;
-    color: map-get($colores, negro);
+    color: $negro;
 }
 
 a{  /* color de los hipervínculos */
-    color: map-get($colores, naranja);
+    color: $naranja;
     transition: color .5s ease-in-out;
 }
 

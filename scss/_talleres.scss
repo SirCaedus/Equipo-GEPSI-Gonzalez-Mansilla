@@ -2,7 +2,7 @@
 
 #talleresBackground{ /* Gradiente del background */
     background: rgb(242,242,242);
-    background-image: radial-gradient(circle, map-get($colores,blanco) 70%, map-get($colores,verde) 100%);
+    background-image: radial-gradient(circle, $blanco 70%, $verde 100%);
 }
 
 .talleresLista{
@@ -36,7 +36,7 @@
 @media screen and (min-width:600px){
 
     #talleresBackground{
-        background-image: radial-gradient(circle, map-get($colores,blanco) 50%, map-get($colores,verde) 100%);
+        background-image: radial-gradient(circle, $blanco 50%, $verde 100%);
     }
     
 }
@@ -45,7 +45,7 @@
 @media screen and (min-width:768px){
 
     #talleresBackground{
-        background-image: radial-gradient(circle, map-get($colores,blanco) 45%, map-get($colores,verde) 100%);
+        background-image: radial-gradient(circle, $blanco 45%, $verde 100%);
     }
 
     .talleresLista img{

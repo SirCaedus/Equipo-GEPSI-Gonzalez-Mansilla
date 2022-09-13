@@ -2,7 +2,7 @@
 
 #contactoBackground{
     background: rgb(242,242,242);
-    background-image: radial-gradient(circle, map-get($colores,blanco) 65%, map-get($colores,verde) 100%);
+    background-image: radial-gradient(circle, $blanco 65%, $verde 100%);
 }
 
 .contactoFlex{  
@@ -16,7 +16,7 @@
 }
 
 .contactoForm fieldset{
-    background-color: map-get($colores,blanco);
+    background-color: $blanco;
     max-width: 263px;
     margin-top: 2em;
     margin-bottom: 2em;
@@ -43,7 +43,7 @@
 @media screen and (min-width:480px){
 
     #contactoBackground{
-        background-image: radial-gradient(circle, map-get($colores,blanco) 50%, map-get($colores,verde) 100%);
+        background-image: radial-gradient(circle, $blanco 50%, $verde 100%);
     }
 
     .contactoSection p{
@@ -56,7 +56,7 @@
 @media screen and (min-width:600px){
 
     #contactoBackground{
-        background-image: radial-gradient(circle, map-get($colores,blanco) 35%, map-get($colores,verde) 100%);
+        background-image: radial-gradient(circle, $blanco 35%, $verde 100%);
     }
 
     .contactoSection p{
@@ -69,7 +69,7 @@
 @media screen and (min-width:768px){
 
     #contactoBackground{
-        background-image: radial-gradient(circle, map-get($colores,blanco) 25%, map-get($colores,verde) 100%);
+        background-image: radial-gradient(circle, $blanco 25%, $verde 100%);
     }
     
 }
@@ -78,7 +78,7 @@
 @media screen and (min-width:992px){
 
     #contactoBackground{
-        background-image: radial-gradient(circle, map-get($colores,blanco) 0%, map-get($colores,verde) 100%);
+        background-image: radial-gradient(circle, $blanco 0%, $verde 100%);
     }
 
     .contactoSection p{

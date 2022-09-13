@@ -2,7 +2,7 @@
 
 #integrantesBackground{ /* Gradiente del background */
     background: rgb(242,242,242);
-    background-image: radial-gradient(circle, map-get($colores,blanco) 80%, map-get($colores,verde) 100%); 
+    background-image: radial-gradient(circle, $blanco 80%, $verde 100%); 
 }
 
 .integrantesFlex{
@@ -28,7 +28,7 @@
 @media screen and (min-width:480px){
 
     #integrantesBackground{
-        background-image: radial-gradient(circle, map-get($colores,blanco) 65%, map-get($colores,verde) 100%); 
+        background-image: radial-gradient(circle, $blanco 65%, $verde 100%); 
     }
     
 }
@@ -37,7 +37,7 @@
 @media screen and (min-width:600px){
 
     #integrantesBackground{
-        background-image: radial-gradient(circle, map-get($colores,blanco) 55%, map-get($colores,verde) 100%); 
+        background-image: radial-gradient(circle, $blanco 55%, $verde 100%); 
     }
     
 }
@@ -46,7 +46,7 @@
 @media screen and (min-width:768px){
 
     #integrantesBackground{
-        background-image: radial-gradient(circle, map-get($colores,blanco) 20%, map-get($colores,verde) 100%); 
+        background-image: radial-gradient(circle, $blanco 20%, $verde 100%); 
     }
 
     .integrantesFoto img{

@@ -4,7 +4,7 @@
     grid-area: footer;
     @include flex-alignItems-center;
     @include flexColumn-justifyCenter;
-    background-color: map-get($colores, blanco);
+    background-color: $blanco;
 }
 
 .textoFooter{
